@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voyaging Black Hole</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="canvas-container"></div>
+
+<!-- ========================================= -->
+<!-- MODAL DE IMÁGENES -->
+<!-- ========================================= -->
+
+<div id="imageModal">
+
+    <div id="modalContent">
+
+        <button id="closeModal">✕</button>
+
+        <img id="modalImage" src="">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <button id="continueBtn">
+    Continuar
+</button>
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- REPRODUCTOR -->
+<!-- ========================================= -->
+
+<div id="musicPlayer">
+
+    <div id="playerTop">
+
+        <div id="songInfo">
+
+            <div id="songTitle">
+                Voyaging Star's Farewell
+            </div>
+
+            <div id="songTime">
+                00:00 / 00:00
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Barra -->
+
+    <div id="progressContainer">
+
+        <div id="progressBar"></div>
+
+    </div>
+
+    <!-- Controles -->
+
+    <div id="playerControls">
+
+        <button id="prevBtn">⏮</button>
+
+        <button id="playBtn">▶</button>
+
+        <button id="nextBtn">⏭</button>
+
+        <button id="playlistBtn">☰</button>
+
+    </div>
+
+    <!-- Volumen -->
+
+    <div id="volumeContainer">
+
+        🔊
+
+        <input
+        type="range"
+        id="volumeSlider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1">
+
+    </div>
+
+    <!-- Playlist -->
+
+    <div id="playlist">
+
+        <!-- Se llena automáticamente -->
+
+    </div>
+
+</div>
+
+<!-- ========================================= -->
+<!-- LETRAS -->
+<!-- ========================================= -->
+
+<div id="lyricsPanel">
+
+    <div id="currentLyric">
+
+        Selecciona una canción
+
+    </div>
+
+    <div id="currentTranslation">
+
+    </div>
+
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module" src="main.js"></script>
+
+<div id="secretMessage">
+
+    AQUÍ VA TU MENSAJE FINAL ❤️
+
+</div>
+
+</body>
+</html>
